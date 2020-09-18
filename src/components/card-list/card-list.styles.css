@@ -1,0 +1,15 @@
+.card-list {
+    width: 83vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row; /* appear Vertically*/
+    grid-gap: 20px;
+
+    @media (max-width: 767px) { 
+        .card-list { 
+          grid-auto-flow: column; /* appear Horizontally on mobile phones*/
+        }
+
+}
+}

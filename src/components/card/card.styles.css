@@ -10,6 +10,15 @@
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
+
+    @media (max-width: 767px) { 
+        .card-container { 
+          grid-auto-flow: column; /* appear Horizontally on mobile phones*/
+          display: flex;
+
+        }
+
+}
 }
 
 .card-container:hover {

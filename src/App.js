@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Story from './components/Story';
-
+import { CardList } from './components/card-list/card-list.js';
+import { SearchBox } from './components/search-box/search-box.component.js';
 
 
 class App extends Component {
@@ -43,13 +43,10 @@ class App extends Component {
 
     return(
      <div className="App"> 
-
-     <input type="search" 
-     placeholder="search story" 
-     onChange={ e => this.setState({ searchField: e.target.value})}/>
-
-     {items.map(item => <Story key={item.id} item={item} items={filteredStory}  /> )}
-
+     < SearchBox 
+      placeholder="search story" 
+      handleChange={e => this.setState({ searchField: e.target.value})}/>
+    < CardList  items = {filteredStory} />
      </div>
     );
     }
