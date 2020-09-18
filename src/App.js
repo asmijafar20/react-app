@@ -46,7 +46,7 @@ class App extends Component {
      < SearchBox 
       placeholder="search story" 
       handleChange={e => this.setState({ searchField: e.target.value})}/>
-    < CardList  items = {filteredStory} />
+     < CardList  items={filteredStory} />
      </div>
     );
     }
