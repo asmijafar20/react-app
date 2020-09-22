@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Installation
 
 1. Clone this project `git clone https://github.com/asmijafar20/react-app`
-2. CD into the directory `cd learn-react`
+2. CD into the directory `cd react-app`
 3. Install all packages with `yarn` or `npm install`
 4. Start the server with `yarn start`
 
